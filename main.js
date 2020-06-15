@@ -209,3 +209,65 @@ for(let counter1 = 1; counter1 <= 20; counter1 += 1) {
     const newDiv = document.createElement("div")
     solution15.append(newDiv)
     newDiv.append(generic)
+
+    const Kata16Heading = document.createElement("h1")
+Kata16Heading.append("Kata16")
+newElement.append(Kata16Heading)
+
+const solution16 = document.createElement("div")
+solution16.append("Solution")
+newElement.append(solution16)
+
+for(let counter1 = 0; counter1 <=sampleArray.length; counter1 += 1) {
+    // const list = sampleArray[counter1]  
+    var sum=sampleArray.reduce(function(a,b){
+        return a+b
+    },0)   
+       } 
+        let newDiv2 = document.createElement("div")
+       solution16.append(newDiv2)
+       newDiv2.append(sum)
+
+       // KATA 17
+const Kata17Heading = document.createElement("h1")
+Kata17Heading.append("Kata17")
+newElement.append(Kata17Heading)
+
+const solution17 = document.createElement("div")
+solution17.append("Solution")
+newElement.append(solution17)
+let lowestNum = sampleArray[0]
+for(let counter1 = 0; counter1 < sampleArray.length; counter1++) {
+  
+  if(sampleArray[counter1] < lowestNum){
+    
+    lowestNum = sampleArray[counter1]
+         
+ }
+    
+}
+const newDiv3 = document.createElement("div")
+solution17.append(newDiv3)
+newDiv3.append(lowestNum)
+
+// KATA 18
+const Kata18Heading = document.createElement("h1")
+Kata18Heading.append("Kata18")
+newElement.append(Kata18Heading)
+
+const solution18 = document.createElement("div")
+solution18.append("Solution")
+newElement.append(solution18)
+let highestNum = 0
+for(let counter1 = 0; counter1 < sampleArray.length; counter1++) {
+  
+  if(sampleArray[counter1] > highestNum){
+    
+    highestNum = sampleArray[counter1]
+         
+ }
+    
+}
+const newDiv4 = document.createElement("div")
+solution18.append(newDiv4)
+newDiv4.append(highestNum) 
