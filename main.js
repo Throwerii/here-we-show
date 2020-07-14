@@ -123,15 +123,13 @@ for(let counter1 = 5; counter1 <= 100; counter1 += 5) {
     newElement.append(Kata10Heading)
     const solution10 = document.createElement("div")
     solution10.append("Solution")
-    newElement.append(solution8)
-        
-        for(let counter1 = 10; counter1 >= 1; counter1 -= 1) {
-            let pSquare=counter1*counter1
-            const newDiv = document.createElement("div")
-            solution10.append(newDiv)
-            newDiv.append(pSquare)
-            } 
-
+    newElement.append(solution10)
+    for(let counter1 = 10; counter1 >= 1; counter1 -= 1) {
+        let counterSquare = counter1 * counter1
+        const newDiv = document.createElement("p")
+        solution10.append(newDiv)
+        newDiv.append(counterSquare)
+        }
 
 
    const Kata11Heading = document.createElement("h1")     
@@ -169,16 +167,15 @@ for(let counter1 = 5; counter1 <= 100; counter1 += 5) {
    newElement.append(Kata13Heading)     
    const solution13 = document.createElement("div")     
    solution13.append("Solution")     
-   newElement.append(solution12)     
+   newElement.append(solution13)     
       
-   for (counter1 =0; counter1 < sampleArray.length; counter1++) {          
-       let list = sampleArray[counter1]   
-       if(sampleArray[counter1]%2 ===1){
-
-           const newDiv = document.createElement('div')          
-        solution13.append(newDiv)         
-         newDiv.append(list)                }  
-       }  
+   for (let counter1=1; counter1 < sampleArray.length; counter1 += 2) {
+    let newList = sampleArray[counter1]
+    if(sampleArray[counter1] % 2 === 1){
+const newDiv = document.createElement("p")
+solution13.append(newDiv)
+newDiv.append(newList)
+}}
        
        const Kata14Heading = document.createElement("h1")     
    Kata14Heading.append("Kata14")     
